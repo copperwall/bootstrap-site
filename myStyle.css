@@ -1,10 +1,27 @@
 .hero-unit {
    background-image:url('wallOfCode2.png');
-   height:200px;
+   height:350px;
 }
 
 .hero-unit h1, p {
    color:white;
 }
 
+.navbar .nav > li > a {
+   padding: 10px 15px;
+}
 
+.navbar-wrapper {
+   margin-top:20px;
+   margin-bottom:-90px;
+   z-index:2;
+}
+
+.navbar-inner {
+   z-index:10;
+}
+
+#welcome {
+   height:350px;
+   margin-top:50px;
+}

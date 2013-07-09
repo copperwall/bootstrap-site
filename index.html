@@ -5,18 +5,31 @@
    <title>Awesome Bootstrap Test</title>
    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
    <link rel='stylesheet' type='text/css' href='myStyle.css'/>
+   <style>
+      .navbar-inner {
+      background: rgb(64,150,238); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(64,150,238,1) 0%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,150,238,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(64,150,238,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(64,150,238,1) 0%,rgba(64,150,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+   }
+   </style>
 </head>
 <body>
+   <!--
    <div class='container'>
       <div class="page-header">
         <h1>Chris Opperwall <small>Awesome Person</small></h1>
       </div>
-   </div>
+   </div> -->
    <div class='navbar-wrapper'>
       <div class='container'>
          <div class="navbar navbar-inverse">
             <div class="navbar-inner">
-               <!-- <a class="brand" href="#">Title</a> -->
+               <a class="brand" href="#">Chris Opperwall</a>
                <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
@@ -29,14 +42,30 @@
       </div>
    </div>
    <div class='hero-unit'>
-      <div class='container'>
+      <div class='container' id="welcome">
          <div class='span6'>
             <h1>Welcome!</h1>
-            <!--<p>This website contains information about experiences, projects, and education. <br/>Please feel to take a look around!</p>-->
             <p>I am a third year computer science student at <a href='http://calpoly.edu'>Cal Poly, San Luis Obispo</a>. I spend most of my time learning about Linux, doing web development, and working on Java software at <a href='http://copart.com'>Copart</a>.
             </p>
          </div>
       </div>
    </div>
+   <div class='container'>
+   <div class='row'>
+      <div class='span4'>
+         <h1>Look Here!</h1>
+         <p>This is really cool</p>
+      </div>
+      <div class='span4'>
+         <h1>This too</h1>
+         <p>Read this</p>
+      </div>
+      <div class='span4'>
+         <h1>Why not one more?</h1>
+         <p>Seriously..</p>
+      </div>
+   </div>
+   </div>
+
 </body>
 </html>
