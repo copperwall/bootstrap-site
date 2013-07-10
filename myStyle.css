@@ -17,11 +17,22 @@
    z-index:2;
 }
 
-.navbar-inner {
-   z-index:10;
+.navbar-inner li {
+   /*border-left:1px solid cyan;*/
+   font-size:1.2em;
+   border-bottom:1px solid cyan;
+}
+
+.navbar-inner .brand {
+   border-left:1px solid cyan;
+   border-right:1px solid cyan;
 }
 
 #welcome {
    height:350px;
    margin-top:50px;
+}
+
+.row .span4 p {
+   color:grey;
 }
