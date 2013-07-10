@@ -8,7 +8,7 @@
 }
 
 .navbar .nav > li > a {
-   padding: 10px 15px;
+   padding: 11px 15px;
 }
 
 .navbar-wrapper {
@@ -35,4 +35,23 @@
 
 .row .span4 p {
    color:grey;
+}
+
+#about_picture {
+   height:300px;
+   width:400px;
+   border-radius:20px;
+}
+
+.pull-center {
+   text-align:center;
+}
+
+.spacer {
+   height:200px;
+}
+
+.navbar span {
+   color:cyan;
+   font-size:1.4em;
 }
