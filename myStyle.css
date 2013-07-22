@@ -40,9 +40,15 @@
 }
 
 #about_picture {
-   height:300px;
-   width:400px;
+   height:250px;
+   width:250px;
    border-radius:20px;
+   float:left;
+}
+
+#about_text {
+   text-align:right;
+   float:right;
 }
 
 .pull-center {
@@ -50,7 +56,7 @@
 }
 
 .spacer {
-   height:200px;
+   height:50px;
 }
 
 .navbar span {
