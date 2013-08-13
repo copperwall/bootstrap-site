@@ -5,6 +5,7 @@
    <title>Chris Opperwall</title>
    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
    <link rel='stylesheet' type='text/css' href='myStyle.css'/>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
    <div class='navbar-wrapper'>
@@ -14,10 +15,10 @@
                <a class="brand" href="#">Chris Opperwall</a>
                <ul class="nav">
                   <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#aboutme_snippet">About</a></li>
-                  <li><a href="#projects_snippet">Projects</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="ChrisOpperwallResume.pdf">Resume</a></li>
+                  <li id="nav_about"><a href="#aboutme_snippet">About</a></li>
+                  <li id="nav_projects"><a href="#projects_snippet">Projects</a></li>
+                  <li id="nav_blog"><a href="#">Blog</a></li>
+                  <li id="nav_resume"><a href="ChrisOpperwallResume.pdf">Resume</a></li>
                </ul>
             </div>
          </div>
@@ -71,5 +72,17 @@
          </div>
       </div> <!-- End Of Row -->
    </div>
+
+   <!-- Totally Experiment Script -->
+   <!-- Meant to animate border size of nav buttons when hovered over -->
+   <!--
+   <script>
+      $("#nav_about").mouseenter(function() {
+         alert("BOOM");
+         $("#nav_about").animate({
+            border-bottom:"+=2px"
+         }, 1000)});
+      })
+   </script> -->
 </body>
 </html>
