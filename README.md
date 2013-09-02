@@ -1,4 +1,4 @@
-# Bootstrap-site
+# Bootstrap-Site
 
 This is a personal website, that I am writing with the help of Twitter's [bootstrap](http://github.com/twitter/bootstrap).
 
