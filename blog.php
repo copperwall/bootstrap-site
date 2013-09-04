@@ -11,6 +11,7 @@
    <header>
       <h1>The Blog</h1>
    </header>
+   <br/><br/>
    <div class='container'>
       <?php
          // Create Connection
@@ -26,12 +27,13 @@
          
          while($row = mysqli_fetch_array($result))
          {
-            echo "<div class='container'>";
+            echo "<div class='container post'>";
             echo "<h3>" . $row['PostTitle'] . "</h3>";
             echo $row['PostDate'];
             echo "<br/><br/>";
             echo $row['PostBody'];
             echo "</div>";
+            echo "<br/><br/>";
          }
 
          mysqli_close($con);
