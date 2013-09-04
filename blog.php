@@ -26,12 +26,12 @@
          
          while($row = mysqli_fetch_array($result))
          {
+            echo "<div class='container'>";
             echo "<h3>" . $row['PostTitle'] . "</h3>";
-            echo "<br>";
-            echo "By: " . $row['Author'];
+            echo $row['PostDate'];
             echo "<br/><br/>";
             echo $row['PostBody'];
-            echo "<br/><br/>";
+            echo "</div>";
          }
 
          mysqli_close($con);
