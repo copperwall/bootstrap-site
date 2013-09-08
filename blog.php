@@ -14,10 +14,14 @@
    <br/><br/>
    <div class='container-fluid'>
       <div class='row-fluid'>
-         <div class='span2'>
+         <div class='span2' id='info_pane'>
             <!-- Nav or description goes here -->
+            <p>/* This is where an info pane would go
+                  Test  Test Test
+                  Test Test
+                  Test */</p>
          </div>
-         <div class='span 10'>
+         <div class='span10' id='content_pane'>
          <?php
             // Create Connection
             $con=mysqli_connect("localhost", "me",  "", "Test");
@@ -45,6 +49,8 @@
 
             mysqli_close($con);
          ?>
+         </div>
+      </div>
    </div>
 </body>
 </html>
