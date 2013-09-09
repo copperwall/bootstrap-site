@@ -48,11 +48,8 @@ body {
 }
 
 #about_picture {
-   height:300px;
-   width:270px;
-   border-radius:10px;
+   border-radius:5px;
    float:left;
-   text-align:left;
 }
 
 #about_text {
