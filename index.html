@@ -41,14 +41,14 @@
       <div class='span5' id='aboutme_snippet'>
          <h1 class='pull-right'>About Me</h1><br/>
          <p class='snippet' id='about_text'>
-            I currently study computer science at Cal Poly, SLO, and
-            work at Copart Inc., as a Java Engineer Intern in Fairfield,
+            I currently study computer science at Cal Poly, SLO, and I
+            just completed an internship at Copart Inc., as a Java Engineer Intern in Fairfield,
             CA. I've been involved in music for many years, including high
-            school marching band, Cal Poly bands, and Drum & Bugle Corps.
+            school marching band, Cal Poly bands, and Drum &amp; Bugle Corps.
             I love looking up new developments in the computer science
-            world, but I'm particularly fascinated with JavaScript and
+            world, but I'm particularly intereste with JavaScript and
             UNIX programming at the moment. 
-            <br/><a href='about.html'>More about me.</a>
+            <br/><a href='about.html'>More about me</a>
          </p>
       </div>
       </div> <!-- End of Row -->
@@ -60,9 +60,9 @@
                Some of the bigger school projects I have done consist of
                an LZW compression and decompression program in C and 
                a MIPS emulator written in Java. Both of these projects
-               on on my <a href='http://github.com/copperwall'>Github</a>
-               , along with some of my side projects (including this site).
-               <br/><a href='projects.html'>More projects.</a>
+               on on my <a href='http://github.com/copperwall'>github</a>, 
+               along with some of my side projects (including this site).
+               <br/><a href='projects.html'>More projects</a>
             </p>
          </div>
          <div class='offset1 span4'>
@@ -73,16 +73,16 @@
       </div> <!-- End Of Row -->
    </div>
 
-   <!-- Totally Experiment Script -->
-   <!-- Meant to animate border size of nav buttons when hovered over -->
-   <!--
+   <!-- This script animates the scrolling from navbar links to their snippets -->
    <script>
-      $("#nav_about").mouseenter(function() {
-         alert("BOOM");
-         $("#nav_about").animate({
-            border-bottom:"+=2px"
-         }, 1000)});
-      })
-   </script> -->
+      var $body = $('html, body');
+
+      $('a').click(function() {
+         $body.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+         }, 400);
+         return false;
+      });
+   </script>
 </body>
 </html>
