@@ -1,6 +1,6 @@
 # Personal Site
 
-This is a personal website, that I am writing with the help of Twitter's [bootstrap](http://github.com/twitter/bootstrap).
+This is a personal website, that I am writing with the help of [bootstrap](http://github.com/twitter/bootstrap).
 
 As of recently, the homepage is mostly complete. Most of the new work I'm doing on this is going to the blog page, which uses php to read from a local mysql database. Currently, all posts are loaded from the db, but I would like to display one at a time and let the user load more as they want.
 
