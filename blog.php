@@ -32,7 +32,7 @@
                echo "Failed to connect to MYSQL: " . mysqli_connect_error();
             }
 
-            $result = mysqli_query($con,"SELECT * FROM blog ORDER BY PostDate DESC");
+            $result = mysqli_query($con,"SELECT * FROM blog ORDER BY PostID DESC");
             
             while($row = mysqli_fetch_array($result))
             {
