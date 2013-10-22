@@ -9,3 +9,7 @@ This site is hosted at [chrisopperwall.com](http://chrisopperwall.com), which is
 ## Update
 
 I have moved my production hosting to my Raspberry Pi, so now I will have to find another testing environment to use.
+
+## Upcoming Improvements
+1. Finish the side content pane
+1. Make it so that the side content pane scroll with the page, until the scrolltop height reaches the bottom of the header, then lock the side panel (jQuery?)
