@@ -1,5 +1,9 @@
 /* Stylesheet for blog.php */
 
+body {
+   background:#f0efe7;
+}
+
 header {
    margin-top:-10px;
    width:100%;
@@ -20,12 +24,13 @@ header > h1 {
    padding-left:10px;
    padding-bottom:10px;
    padding-right:10px;
-   background:#f0efe7;
+   max-width:700px;
+   background:white;
 }
 
 .post p {
    font-size: 16px;
    margin-bottom:18px;
-   font-weight:200;
-   line-height:25px;
+   font-weight:300;
+   line-height:27px;
 }
