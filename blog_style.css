@@ -9,9 +9,8 @@ header {
 }
 
 header > h1 {
-   padding-top:20px;
+   padding-top:100px;
    padding-left:10px;
-   line-height:200px;
    font-size:5em;
    text-align:center;
    color:white;
@@ -22,4 +21,11 @@ header > h1 {
    padding-bottom:10px;
    padding-right:10px;
    background:#f0efe7;
+}
+
+.post p {
+   font-size: 16px;
+   margin-bottom:18px;
+   font-weight:200;
+   line-height:25px;
 }

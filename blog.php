@@ -37,11 +37,11 @@
             while($row = mysqli_fetch_array($result))
             {
                echo "<div class='row'>";
-               echo "<div class='span8 offset1 post'>";
-               echo "<h3>" . $row['title'] . "</h3>";
+               echo "<div class='span9 offset1 post'>";
+               echo "<h2>" . $row['title'] . "</h2>";
                echo $row['datePosted'];
                echo "<br/><br/>";
-               echo $row['body'];
+               echo "<p>" . $row['body'] . "</p>";
                echo "</div>";
                echo "</div>";
                echo "<br/><br/>";
