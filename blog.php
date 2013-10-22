@@ -24,7 +24,7 @@
          <div class='span10' id='content_pane'>
          <?php
             // Create Connection
-            $con=mysqli_connect("localhost", "me",  "", "Test");
+            $con=mysqli_connect("localhost", "me",  "", "blog");
 
             // Check connection
             if (mysqli_connect_errno($con))
@@ -32,16 +32,16 @@
                echo "Failed to connect to MYSQL: " . mysqli_connect_error();
             }
 
-            $result = mysqli_query($con,"SELECT * FROM blog ORDER BY PostID DESC");
+            $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY id DESC");
             
             while($row = mysqli_fetch_array($result))
             {
                echo "<div class='row'>";
-               echo "<div class='span6 offset2 post'>";
-               echo "<h3>" . $row['PostTitle'] . "</h3>";
-               echo $row['PostDate'];
+               echo "<div class='span8 offset1 post'>";
+               echo "<h3>" . $row['title'] . "</h3>";
+               echo $row['datePosted'];
                echo "<br/><br/>";
-               echo $row['PostBody'];
+               echo $row['body'];
                echo "</div>";
                echo "</div>";
                echo "<br/><br/>";
