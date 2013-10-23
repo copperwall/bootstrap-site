@@ -2,7 +2,7 @@
 <html>
 <head>
    <title>The Blog</title>
-   <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.css'/>
+   <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.css'/>
    <link rel='stylesheet' type='text/css' href='blog_style.css'/>
 </head>
 <body>
@@ -14,7 +14,7 @@
    <br/><br/>
    <div class='container-fluid'>
       <div class='row-fluid'>
-         <div class='span2' id='info_pane'>
+         <div class='span2 well' id='info_pane'>
             <!-- Nav or description goes here -->
             <p>/* This is where an info pane would go
                   Test  Test Test
@@ -37,7 +37,7 @@
             while($row = mysqli_fetch_array($result))
             {
                echo "<div class='row'>";
-               echo "<div class='span9 offset1 post'>";
+               echo "<div class='span9 offset1 post well'>";
                echo "<h2>" . $row['title'] . "</h2>";
                echo $row['datePosted'];
                echo "<br/><br/>";
