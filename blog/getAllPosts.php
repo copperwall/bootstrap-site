@@ -1,4 +1,8 @@
 <?php
+   $q = intval($_GET['q']);
+
+   echo "<h1>" . $q . "</h1>";
+
    // Create Connection
    $con=mysqli_connect("localhost", "me",  "", "blog");
 
