@@ -16,10 +16,22 @@
       <div class='row-fluid'>
          <div class='span4 well' id='info_pane'>
             <!-- Nav or description goes here -->
-            <p>/* This is where an info pane would go
-                  Test  Test Test
-                  Test Test
-                  Test */</p>
+            <h5>Thoughts and Such</h5>
+            <p>
+            I use this space to post anything new with my site, and any new projects or thoughts I feel like sharing.
+            </p>
+            <h5>What is this?</h5>
+            <p>My blog!</p>
+            <p>
+            I built this using
+               <ul>
+                  <li><strong>MySQL</strong></li>
+                  <li><strong>PHP</strong></li>
+                  <li><strong>HTML/CSS + Bootstrap</strong></li>
+                  <li><strong>Python</strong></li>
+               </ul>
+            Each post gets written in plaintext, and then parsed and inserted by a Python script.<br/>The MySQL database is then queried through php each time the page loads.
+            </p>
          </div>
          <div class='span8' id='content_pane'>
          <?php

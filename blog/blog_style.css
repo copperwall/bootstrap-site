@@ -12,11 +12,16 @@ header {
    background-attachment:fixed;
 }
 
-header > h1 {
-   padding-top:100px;
+header h1 {
+   padding-top:80px;
    padding-left:10px;
    font-size:5em;
    text-align:center;
+   color:white;
+}
+
+header h2 {
+   padding-top:110px;
    color:white;
 }
 
@@ -36,6 +41,7 @@ header > h1 {
 }
 
 #info_pane {
+   position: -webkit-sticky;
    padding:10px 20px;
    max-width:200px;
    background:white;
