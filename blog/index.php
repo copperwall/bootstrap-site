@@ -35,7 +35,7 @@
          </div>
          <div class='span8' id='content_pane'>
             <?php include 'getPosts.php';?>
-            <button class='btn' onclick='moarPosts()'>Moar Posts</button>
+            <div id='moarPosts' class='post well' onclick='moarPosts()'>Moar Posts</div>
          </div>
       </div>
    </div>

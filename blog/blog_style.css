@@ -49,6 +49,10 @@ header h2 {
    margin-right:40px;
 }
 
+#moarPosts {
+   text-align:center;
+}
+
 #lastPostMade {
    display:none;
 }
