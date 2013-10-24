@@ -49,3 +49,6 @@ header h2 {
    margin-right:40px;
 }
 
+#lastPostMade {
+   display:none;
+}

@@ -23,6 +23,7 @@
       echo "</div>";
       echo "</div>";
       echo "<br/><br/>";
+      echo "<div id='lastPostMade'></div>";
    }
 
    mysqli_close($con);
