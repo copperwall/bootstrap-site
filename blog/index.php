@@ -4,6 +4,7 @@
    <title>The Blog</title>
    <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.css'/>
    <link rel='stylesheet' type='text/css' href='blog_style.css'/>
+   <script type='text/javascript' src='ajax.js'></script>
 </head>
 <body>
    <!-- The Header should go hear, code background, "The Blog" title -->
@@ -35,7 +36,10 @@
          </div>
          <div class='span8' id='content_pane'>
             <?php include 'getPosts.php';?>
-            <div id='moarPosts' class='post well' onclick='moarPosts()'>Moar Posts</div>
+            <div class='row'>
+               <div id='moarPosts' class='post well lead' onclick='moarPosts()'>Moar Posts</div>
+            </div>
+            <br/><br/>
          </div>
       </div>
    </div>

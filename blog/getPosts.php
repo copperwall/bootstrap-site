@@ -10,7 +10,16 @@
       echo "Failed to connect to MYSQL: " . mysqli_connect_error();
    }
 
-   $result = mysqli_query($con,"SELECT * FROM Posts WHERE id > ".$q." ORDER BY id DESC LIMIT 2");
+   if ($q != 0)
+   {
+      $result = mysqli_query($con,"SELECT * FROM Posts WHERE id < ".$q." ORDER BY id DESC LIMIT 2");
+   }
+   else
+   {
+      $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY id DESC LIMIT 2");
+   }
+
+   $lastId = $q;
    
    while($row = mysqli_fetch_array($result))
    {
@@ -22,9 +31,11 @@
       echo "<p>" . $row['body'] . "</p>";
       echo "</div>";
       echo "</div>";
-      //echo "<br/><br/>";
-      echo "<div id='lastPostMade'></div>";
+      echo "<br/><br/>";
+      $lastId = $row['id'];
    }
+
+   echo "<div id='lastPostMade'>".$lastId."</div>";
 
    mysqli_close($con);
 ?>

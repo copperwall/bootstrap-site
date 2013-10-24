@@ -30,7 +30,6 @@ header h2 {
    max-width:700px;
    background:white;
    border-radius:5px;
-   margin-bottom:20px;
    margin: 0 auto;
 }
 
@@ -53,10 +52,6 @@ header h2 {
 #moarPosts {
    text-align:center;
    cursor:pointer;
-}
-
-#moarPosts:hover {
-   box-shadow:2px 2px 2px 1px grey;
 }
 
 #lastPostMade {
