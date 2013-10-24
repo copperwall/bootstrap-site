@@ -1,7 +1,5 @@
 <?php
-   $q = intval($_GET['q']);
-
-   echo "<h1>" . $q . "</h1>";
+   $q = intval($_GET['q']); // q = 0 if no q request
 
    // Create Connection
    $con=mysqli_connect("localhost", "me",  "", "blog");
@@ -12,7 +10,7 @@
       echo "Failed to connect to MYSQL: " . mysqli_connect_error();
    }
 
-   $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY id DESC");
+   $result = mysqli_query($con,"SELECT * FROM Posts WHERE id > ".$q." ORDER BY id DESC LIMIT 2");
    
    while($row = mysqli_fetch_array($result))
    {
