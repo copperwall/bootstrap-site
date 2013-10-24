@@ -22,7 +22,7 @@
       echo "<p>" . $row['body'] . "</p>";
       echo "</div>";
       echo "</div>";
-      echo "<br/><br/>";
+      //echo "<br/><br/>";
       echo "<div id='lastPostMade'></div>";
    }
 
