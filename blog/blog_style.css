@@ -51,6 +51,11 @@ header h2 {
 
 #moarPosts {
    text-align:center;
+   cursor:pointer;
+}
+
+#moarPosts:hover {
+   box-shadow:2px 2px 2px 1px grey;
 }
 
 #lastPostMade {
