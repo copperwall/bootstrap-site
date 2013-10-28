@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>The Blog</title>
+   <title>The OpperBlog</title>
    <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.css'/>
    <link rel='stylesheet' type='text/css' href='blog_style.css'/>
    <script type='text/javascript' src='ajax.js'></script>
@@ -10,7 +10,7 @@
    <!-- The Header should go hear, code background, "The Blog" title -->
    <!-- NavBar is on the side? Either that or list of blog titles -->
    <header>
-      <h1>The Blog</h1>
+      <h1>The OpperBlog</h1>
    </header>
    <br/><br/>
    <div class='container-fluid'>
@@ -30,12 +30,15 @@
                   <li><strong>PHP</strong></li>
                   <li><strong>HTML/CSS + Bootstrap</strong></li>
                   <li><strong>Python</strong></li>
+                  <li><strong>JavaScript (AJAX)</strong></li>
                </ul>
             Each post gets written in plaintext, and then parsed and inserted by a Python script.<br/>The MySQL database is then queried through php each time the page loads.
             </p>
          </div>
          <div class='span8' id='content_pane'>
-            <?php include 'getPosts.php';?>
+            <div id='all_posts'>
+               <?php include 'getPosts.php';?>
+            </div>
             <div class='row'>
                <div id='moarPosts' class='post well lead' onclick='moarPosts()'>Moar Posts</div>
             </div>
