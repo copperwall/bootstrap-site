@@ -17,6 +17,7 @@
    else
    {
       $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY id DESC LIMIT 2");
+      $min = mysqli_query($con, "SELECT MIN(id) FROM Posts");
    }
 
    $lastId = $q;
@@ -36,6 +37,12 @@
    }
 
    echo "<div id='lastPostMade'>".$lastId."</div>";
+   
+   if ($q == 0) 
+   {
+      $row = mysqli_fetch_array($min);
+      echo "<div id='minPost'>".$row['MIN(id)']."</div>";
+   }
 
    mysqli_close($con);
 ?>

@@ -9,13 +9,26 @@ function moarPosts() {
 
    xmlhttp.onreadystatechange = function() {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-         document.getElementById('all_posts').innerHTML
-          = document.getElementById('all_posts').innerHTML
-          + "\n" + xmlhttp.responseText;
+         var minPost = document.getElementById('minPost').innerHTML;
+         var moarPostsButton = document.getElementById('moarPosts');
+         var lastPostCounter = document.getElementById('lastPostMade');
+         var all_posts = document.getElementById('all_posts');
+
+         lastPostCounter.parentNode.removeChild(lastPostCounter);
+
+         all_posts.innerHTML = all_posts.innerHTML + "\n" + xmlhttp.responseText;
+         
+         lastPostCounter = document.getElementById('lastPostMade');
+         
+         if (minPost == lastPostCounter.innerHTML) {
+            moarPostsButton.parentNode.removeChild(moarPostsButton);
+         }
       }
    }
+
    // Get lowest post id placed in html somewhere or something
    lastPostId = document.getElementById('lastPostMade').innerHTML;
+
    //alert("Fetching next two posts with id's less than " + lastPostId);
    xmlhttp.open("GET","getPosts.php?q="+lastPostId,true);
    xmlhttp.send();
