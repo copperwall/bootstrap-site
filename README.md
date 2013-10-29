@@ -13,4 +13,5 @@ I have moved my production hosting to my Raspberry Pi, so now I will have to fin
 ## Upcoming Improvements
 1. Finish the side content pane
 1. Make it so that the side content pane scroll with the page, until the scrolltop height reaches the bottom of the header, then lock the side panel (jQuery?)
-1. Add AJAX support so that additional blog posts can be added by clicking a button at the bottom of the posts shown
+1. Add jQuery/JavaScript to smooth scroll down to the top of the newest posts when the "Moar Posts" button is clicked
+1. (*DONE*)Add AJAX support so that additional blog posts can be added by clicking a button at the bottom of the posts shown
