@@ -22,21 +22,21 @@
 
    $lastId = $q;
    
+   echo "<div id='lastPostMade'>".$lastId."</div>";
+
    while($row = mysqli_fetch_array($result))
    {
-      echo "<div class='row'>";
-      echo "<div class='post well'>";
+      echo "<div class='row'>\n";
+      echo "<div class='post well'>\n";
       echo "<h2>" . $row['title'] . "</h2>";
       echo $row['datePosted'];
-      echo "<br/><br/>";
+      echo "\n<br/><br/>\n";
       echo "<p>" . $row['body'] . "</p>";
-      echo "</div>";
-      echo "</div>";
-      echo "<br/><br/>";
+      echo "\n</div>\n";
+      echo "</div>\n";
+      echo "<br/><br/>\n";
       $lastId = $row['id'];
    }
-
-   echo "<div id='lastPostMade'>".$lastId."</div>";
    
    if ($q == 0) 
    {
