@@ -35,7 +35,7 @@ function moarPosts() {
    xmlhttp.open("GET","getPosts.php?q="+lastPostId,true);
    xmlhttp.send();
 
-   var $body = $(html, body);
+   var $body = $('html, body');
    var $top_post = $('#current_top_post');
 
    $body.animate({
