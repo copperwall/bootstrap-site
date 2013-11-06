@@ -25,6 +25,13 @@ function moarPosts() {
          if (minPost == lastPostCounter.innerHTML) {
             moarPostsButton.parentNode.removeChild(moarPostsButton);
          }
+
+         var $body = $('html, body');
+         var $top_post = $('#current_top_post');
+
+         $body.animate({
+            scrollTop: $top_post.offset().top
+         }, 400);
       }
    }
 
@@ -35,10 +42,4 @@ function moarPosts() {
    xmlhttp.open("GET","getPosts.php?q="+lastPostId,true);
    xmlhttp.send();
 
-   var $body = $('html, body');
-   var $top_post = $('#current_top_post');
-
-   $body.animate({
-      scrollTop: $top_post.offset().top
-   }, 400);
 }
