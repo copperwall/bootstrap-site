@@ -5,6 +5,7 @@
    <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.css'/>
    <link rel='stylesheet' type='text/css' href='blog_style.css'/>
    <script type='text/javascript' src='ajax.js'></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
    <!-- The Header should go hear, code background, "The Blog" title -->

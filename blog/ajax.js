@@ -34,4 +34,11 @@ function moarPosts() {
    //alert("Fetching next two posts with id's less than " + lastPostId);
    xmlhttp.open("GET","getPosts.php?q="+lastPostId,true);
    xmlhttp.send();
+
+   var $body = $(html, body);
+   var $top_post = $('#current_top_post');
+
+   $body.animate({
+      scrollTop: $top_post.offsetTop
+   }, 400);
 }
