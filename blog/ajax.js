@@ -39,6 +39,6 @@ function moarPosts() {
    var $top_post = $('#current_top_post');
 
    $body.animate({
-      scrollTop: $top_post.offsetTop
+      scrollTop: $top_post.offset().top
    }, 400);
 }
