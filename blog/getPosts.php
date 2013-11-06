@@ -21,6 +21,8 @@
    }
 
    $lastId = $q;
+
+   echo "<div id='current_top_post'></div>";
    
    while($row = mysqli_fetch_array($result))
    {

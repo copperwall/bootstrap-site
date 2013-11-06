@@ -13,8 +13,10 @@ function moarPosts() {
          var moarPostsButton = document.getElementById('moarPosts');
          var lastPostCounter = document.getElementById('lastPostMade');
          var all_posts = document.getElementById('all_posts');
+         var top_post = document.getElementById('current_top_post');
 
          lastPostCounter.parentNode.removeChild(lastPostCounter);
+         top_post.parentNode.removeChild(top_post);
 
          all_posts.innerHTML = all_posts.innerHTML + "\n" + xmlhttp.responseText;
          
