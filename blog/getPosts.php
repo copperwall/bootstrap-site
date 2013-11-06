@@ -22,8 +22,6 @@
 
    $lastId = $q;
    
-   echo "<div id='lastPostMade'>".$lastId."</div>";
-
    while($row = mysqli_fetch_array($result))
    {
       echo "<div class='row'>\n";
@@ -37,6 +35,8 @@
       echo "<br/><br/>\n";
       $lastId = $row['id'];
    }
+
+   echo "<div id='lastPostMade'>".$lastId."</div>";
    
    if ($q == 0) 
    {
