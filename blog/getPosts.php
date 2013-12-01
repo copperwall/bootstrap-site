@@ -2,7 +2,7 @@
    $q = intval($_GET['q']); // q = 0 if no q request
 
    // Create Connection
-   $con=mysqli_connect("localhost", "me",  "", "blog");
+   $con=mysqli_connect("localhost", "read",  "", "blog");
 
    // Check connection
    if (mysqli_connect_errno($con))
@@ -12,11 +12,16 @@
 
    if ($q != 0)
    {
-      $result = mysqli_query($con,"SELECT * FROM Posts WHERE id < ".$q." ORDER BY id DESC LIMIT 2");
+      $result = mysqli_query($con,"SELECT  id, title, MONTHNAME(datePosted) AS Month,
+                                   DAY(datePosted) AS Day, YEAR(datePosted) AS Year, body
+                                   FROM Posts WHERE id < ".$q." ORDER BY id DESC LIMIT 2");
    }
    else
    {
-      $result = mysqli_query($con,"SELECT * FROM Posts ORDER BY id DESC LIMIT 2");
+      $result = mysqli_query($con,"SELECT id, title, MONTHNAME(datePosted) AS Month,
+                                   DAY(datePosted) AS Day, YEAR(datePosted) AS Year, body 
+                                   FROM Posts ORDER BY id DESC LIMIT 2");
+
       $min = mysqli_query($con, "SELECT MIN(id) FROM Posts");
    }
 
@@ -29,7 +34,7 @@
       echo "<div class='row'>\n";
       echo "<div class='post well'>\n";
       echo "<h2>" . $row['title'] . "</h2>";
-      echo $row['datePosted'];
+      echo $row['Month']." ".$row['Day'].", ".$row['Year'];
       echo "\n<br/><br/>\n";
       echo "<p>" . $row['body'] . "</p>";
       echo "\n</div>\n";
