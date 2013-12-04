@@ -14,9 +14,9 @@
       <h1>The OpperBlog</h1>
    </header>
    <br/><br/>
-   <div class='container-fluid'>
-      <div class='row-fluid'>
-         <div class='span4 well' id='info_pane'>
+   <div class='container'>
+      <div class='row'>
+         <div class='col-md-4 well' id='info_pane'>
             <!-- Nav or description goes here -->
             <h5>Thoughts and Such</h5>
             <p>
@@ -36,7 +36,7 @@
             Each post gets written in plaintext, and then parsed and inserted by a Python script.<br/>The MySQL database is then queried through php each time the page loads.
             </p>
          </div>
-         <div class='span8' id='content_pane'>
+         <div class='col-md-8' id='content_pane'>
             <div id='all_posts'>
                <?php include 'getPosts.php';?>
             </div>
