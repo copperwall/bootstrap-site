@@ -1,46 +1,30 @@
 body {
+   padding-top:50px;
    margin-bottom:30px;
 }
 
-.hero-unit {
+.mynav {
+   margin-left:auto;
+   margin-right:auto;
+}
+
+.jumbotron {
    background-image:url('wall_of_code.png');
    background-attachment:fixed;
    background-position:top right;
-   height:350px;
+   height:500px;
 }
 
-.hero-unit h1, p {
+.jumbotron h1, p {
    color:white;
 }
 
-.navbar, .navbar-inverse {
-   width:700px;
-}
-
-.navbar .nav > li > a {
+/*.navbar .nav > li > a {
    padding: 10px 15px;
-}
-
-.navbar-wrapper {
-   margin-top:20px;
-   margin-bottom:-90px;
-   z-index:2;
-}
-
-.navbar-inner li {
-   /*border-left:1px solid cyan;*/
-   font-size:1.2em;
-   border-bottom:1px solid cyan;
-}
-
-.navbar-inner .brand {
-   border-left:1px solid cyan;
-   border-right:1px solid cyan;
-}
+}*/
 
 #welcome {
-   height:350px;
-   margin-top:50px;
+   margin-top:-15px;
 }
 
 .row p {
@@ -49,6 +33,7 @@ body {
 
 #about_picture {
    border-radius:5px;
+   max-width:300px;
    float:left;
 }
 
@@ -65,11 +50,10 @@ body {
    height:50px;
 }
 
-.navbar span {
-   color:cyan;
-   font-size:1.4em;
-}
-
 .snippet {
    color:grey;
+}
+
+.snippet img {
+   max-width:300px;
 }
