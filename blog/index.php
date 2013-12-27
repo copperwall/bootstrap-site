@@ -4,6 +4,7 @@
    <title>The OpperBlog</title>
    <link rel='stylesheet' type='text/css' href='../bootstrap/css/bootstrap.css'/>
    <link rel='stylesheet' type='text/css' href='blog_style.css'/>
+   <link rel='stylesheet' media='screen and (max-device-width: 768px)'/>
    <script type='text/javascript' src='ajax.js'></script>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
@@ -16,7 +17,7 @@
    <br/><br/>
    <div class='container'>
       <div class='row'>
-         <div class='col-md-4 well' id='info_pane'>
+         <div class='col-md-4 well .hidden-xs' id='info_pane'>
             <!-- Nav or description goes here -->
             <h5>Thoughts and Such</h5>
             <p>

@@ -1,5 +1,11 @@
 /* Stylesheet for blog.php */
 
+@media screen and (max-device-width: 768px) {
+   #info-pane {
+      display:hidden !important;
+   }
+}
+
 body {
    background:#f0efe7;
 }
