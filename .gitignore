@@ -1,4 +1,6 @@
 public/
+bitcoin/
+blog/
 tests/
 bootstrap/
 *.swp
