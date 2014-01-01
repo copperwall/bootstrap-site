@@ -11,6 +11,7 @@
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
+   <?php include_once("analyticstracking.php") ?>
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <ul class='nav navbar-nav mynav'>
          <li><a class='navbar-brand' href='#'>Chris Opperwall</a></li>
