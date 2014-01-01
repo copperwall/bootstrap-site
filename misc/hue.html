@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Hue</title>
+	<style>
+		.hue {
+			/*color:#66CD00;*/
+			font-size:3em;
+		}
+	</style>
+</head>
+<body>
+	
+	<script>
+		var rand = Math.random() * 10000;
+
+		setInterval(function() {
+			document.write("<span style='font-size:3em; color:#66CD00;'>hue</span>");	
+		}, 150);
+
+		setInterval(function() {
+			document.write("<br/>");
+		}, 4000);
+
+		var cancel = setInterval(function() {
+			var cancel1 = setInterval(function() {
+				//clearInterval(cancel);
+				//cancel = cancel1;
+				rand = Math.random() * 10000;
+				document.write("<span style='font-size:5em; color:purple;'>PLS</span>");
+			}, rand);
+		}, rand);
+	</script>
+</body>
+</html>
