@@ -48,7 +48,7 @@
    </div>
    <div class='container'>
       <div class='row' id='aboutme'>
-      <div class='col-md-4 '>
+      <div class='col-md-4 col-md-offset-1'>
          <img id='about_picture' src='me2.jpg'/>
       </div>
       <div class='col-md-5 col-md-offset-1' id='aboutme_snippet'>
@@ -67,7 +67,7 @@
       </div> <!-- End of Row -->
       <div class='spacer'></div>
       <div class = 'row' id='projects'>
-         <div class='col-md-5 pull-left' id='projects_snippet'>
+         <div class='col-md-5 col-md-offset-1 pull-left' id='projects_snippet'>
             <h1 class='pull-left'>My Projects</h1><br/>
             <p class='snippet pull-right'>
                Some of the bigger school projects I have done consist of
