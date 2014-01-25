@@ -49,7 +49,7 @@
    <div class='container'>
       <div class='row' id='aboutme'>
       <div class='col-md-4 col-md-offset-1'>
-         <img id='about_picture' src='me2.jpg'/>
+         <img id='about_picture' src='me.jpg'/>
       </div>
       <div class='col-md-5 col-md-offset-1' id='aboutme_snippet'>
          <h1 class='pull-right'>About Me</h1><br/>
