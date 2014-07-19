@@ -3,12 +3,11 @@
 <html>
 <head>
    <title>Chris Opperwall</title>
-   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
    <link rel='stylesheet' type='text/css' href='my_style.css'/>
    <meta name="description" content="Chris Opperwall's Personal Website"/>
    <meta name="keywords" content="Chris, Opperwall, Chris Opperwall, Computer Science, Student"/>
    <meta name="author" content="Chris Opperwall"/>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
    <?php include_once("analyticstracking.php") ?>
@@ -103,6 +102,8 @@
       </ul>
    </div>
 
+   <!-- Deferred JS for faster page load -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
    <!-- This script animates the scrolling from navbar links to their snippets -->
    <script>
       var $body = $('html, body');
